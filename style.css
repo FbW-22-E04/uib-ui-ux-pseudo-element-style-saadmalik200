@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+main {
+  margin: 6rem;
+  font-size: 2rem;
+}
+
+.part1 li::before,
+.part1 li::after {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  /* background-color: white; */
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
+  content: "";
+  background-size: 1rem 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section2 {
+  margin-top: 10rem;
+}
+
+.part2 p {
+  display: inline;
+  font-size: 4rem;
+  color: blue;
+  padding: 4rem 2rem;
+  margin-right: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.part2 li {
+  position: relative;
+  font-size: 4rem;
+  color: rgb(0, 0, 0);
+  padding: 4rem 2rem;
+  margin-left: 4rem;
+  /* margin-bottom: 4rem; */
+}
+
+.part2 .pdf::after {
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  width: 9rem;
+  height: 9rem;
+  background-image: url(https://img.icons8.com/officel/64/000000/pdf.png);
+  content: "";
+  background-size: 7rem 7rem;
+  background-position: 0rem 2rem;
+  background-repeat: no-repeat;
+}
+
+.part2 .xls::after {
+  position: absolute;
+  top: 2rem;
+  display: inline-block;
+  width: 9rem;
+  height: 9rem;
+  background-image: url(https://img.icons8.com/dusk/64/000000/ms-excel.png);
+  content: "";
+  background-size: 7rem 7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.part2 .word::after {
+  position: absolute;
+  top: 3rem;
+  display: inline-block;
+  width: 9rem;
+  height: 9rem;
+  background-image: url(https://img.icons8.com/dusk/64/000000/ms-word.png);
+  content: "";
+  background-size: 7rem 7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section3 {
+  margin-top: 10rem;
+}
+
+.sandwich {
+  margin: 2rem;
+  font-size: 2rem;
+  border: 1px solid black;
+}
+
+.sandwich::before {
+  display: block;
+  max-width: 100%;
+  height: 2rem;
+  background: rgb(85, 143, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(85, 143, 233, 1) 0%,
+    rgba(134, 224, 134, 1) 49%,
+    rgba(199, 233, 148, 1) 78%,
+    rgba(196, 192, 84, 1) 100%
+  );
+  content: "";
+}
+
+.sandwich::after {
+  display: block;
+  max-width: 100%;
+  height: 2rem;
+  background: rgb(85, 143, 233);
+  background: linear-gradient(
+    to left,
+    rgba(85, 143, 233, 1) 0%,
+    rgba(134, 224, 134, 1) 49%,
+    rgba(199, 233, 148, 1) 78%,
+    rgba(196, 192, 84, 1) 100%
+  );
+  content: "";
+}
